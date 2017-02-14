@@ -83,11 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH=$PATH:/nfs/2016/v/varnaud/goinfre/homebrew/bin
 if [ ! -d "$HOME/goinfre/homebrew/bin" ] ; then
 	git clone https://github.com/Homebrew/homebrew.git ~/goinfre/homebrew
-	export PATH=$PATH:/nfs/2016/v/varnaud/goinfre/homebrew/bin
 	brew update
 fi
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 export MAIL="varnaud@student.42.us.org"
+zstyle ':completion:*:*:vim:*:*files' ignored-patterns '*.o'
 # alias brew="/nfs/2016/v/varnaud/goinfre/homebrew/bin/brew"
+# alias vim="/nfs/2016/v/varnaud/goinfre/homebrew/bin/vim"
