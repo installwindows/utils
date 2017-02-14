@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/nfs/2016/v/varnaud/.oh-my-zsh
+  export ZSH=/home/varnaud/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -73,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -83,13 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:/nfs/2016/v/varnaud/goinfre/homebrew/bin
-if [ ! -d "$HOME/goinfre/homebrew/bin" ] ; then
-	git clone https://github.com/Homebrew/homebrew.git ~/goinfre/homebrew
-	brew update
-fi
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+alias .='xdg-open .'
 export MAIL="varnaud@student.42.us.org"
-zstyle ':completion:*:*:vim:*:*files' ignored-patterns '*.o'
-# alias brew="/nfs/2016/v/varnaud/goinfre/homebrew/bin/brew"
-# alias vim="/nfs/2016/v/varnaud/goinfre/homebrew/bin/vim"
+alias subl="/home/varnaud/Documents/sublime_text_3/sublime_text"
+export ANDROID_HOME=~/1tb/Android/
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
