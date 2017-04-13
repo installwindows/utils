@@ -9,3 +9,6 @@ set tabstop=4
 set shiftwidth=4
 set t_Co=256
 set background=dark
+nnoremap sl :silent .w !pbcopy<CR>
+nnoremap sl :silent .w !pbcopy<CR>
+nnoremap sf :silent %w !pbcopy<CR>
