@@ -1,0 +1,12 @@
+Install X11 dev
+sudo apt-get install libx11-dev
+sudo apt-get install libxext-dev
+
+cd into minilibx
+make
+cp libmlx.a /usr/local/lib
+cp mlx.h /usr/local/include
+cp man/man3/mlx*.1 /usr/local/man/man1
+
+to compile:
+-lmlx -lXext -lX11
